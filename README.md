@@ -4,8 +4,8 @@ Descripcion:
 El presente proyecto consiste en crear una pagina web para una institucion educativa que cuenta con nivel inicial, primario y secundario (con dos orientaciones: Educación fisica y multimedia) con la finalidad de mostrar las actividades que desarrola la misma y a su vez que los ciudadanos puedan accceder a los datos basicos de contanto(facebook, intagram, telefono, mail, domicilio)
 Funcianalidades
     Presentación de la institución (historia) 
-•	Mostrar a la comunidad las actividades que desarrolla la institución como proyectos, ferias de ciencias, orientaciones que dicta la escuela secundaria,etc.
-•	Generar un formulario de contacto.
+* Mostrar a la comunidad las actividades que desarrolla la institución como proyectos, ferias de ciencias, orientaciones que dicta la escuela secundaria,etc.
+* Generar un formulario de contacto.
 
 Ideas a futuro
     
@@ -14,5 +14,18 @@ Ideas a futuro
 * Implementar una biblioteca digital con libros, guías y contenido descargable.
 * Incorporar un sistema de inscripción online para facilitar el ingreso de nuevos estudiantes.
 * Establecer accesos diferenciados según el rol.
+* Integrar un sistema de notificaciones para informar a estudiantes y padres sobre actividades o novedades.
+* Crear un módulo de estadísticas para que los directivos puedan analizar la participación en proyectos y actividades.
+
+---
+
+##  Integrantes del equipo
+
+- **Matías Rodríguez** – Scrum Master / Desarrollador  
+- **Eric Matías Astrada** – Desarrollador  
+- **Kevin Astrada** – Desarrollador  
+- **Dolores Fernández Rubio** – Desarrolladora  
+- **Franco Fernández Rubio** – Desarrollador  
+- **Alejandro Gariglio** – Desarrollador  
 
 
