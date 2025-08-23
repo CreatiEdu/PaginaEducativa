@@ -11,5 +11,8 @@ Ideas a futuro
     
 * Que los profesores puedan cargar sus programas educativos para que los estudiantes puedan acceder y visualizarlo.
 * Armar una sección donde los estudiantes puedan acceder a los contenidos de cada asignatura como videos, apuntes, graficos,  etc..
+* Implementar una biblioteca digital con libros, guías y contenido descargable.
+* Incorporar un sistema de inscripción online para facilitar el ingreso de nuevos estudiantes.
+* Establecer accesos diferenciados según el rol.
 
 
