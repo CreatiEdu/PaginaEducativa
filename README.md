@@ -18,6 +18,22 @@ Ideas a futuro
 * Crear un módulo de estadísticas para que los directivos puedan analizar la participación en proyectos y actividades.
 
 ---
+## Tecnologías
+
+* **Frontend**
+  - **HTML5**: Estructura del sitio web.
+  - **CSS3**: Estilos y diseño responsivo.
+  - **JavaScript** 
+
+* **Backend**
+  - **Python**: Lenguaje de programación para la lógica del lado del servidor.
+  
+* **Base de Datos**
+  - **MySQL**: Almacenamiento y gestión de la información de usuarios y contenido.
+
+* **Control de versiones**
+  - **Git & GitHub**: Administración del repositorio y colaboración en equipo con ramas.
+---
 
 ##  Integrantes del equipo
 
