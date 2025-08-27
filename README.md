@@ -7,6 +7,12 @@ El presente proyecto consiste en crear una página web para una institución edu
 * Generar un formulario de contacto.
 * Se va implementar que los podres puedan acceder a las cuotas adeudas a través de la página web y poder descargarla para su futuro pago.
 
+**Tecnologias a implementar**
+Dado que se realizara un sitio Web, las tecnologias a utilizar seran las siguientes:
+* html
+* css
+* php
+
 Ideas a futuro
     
 * Que los profesores puedan cargar sus programas educativos para que los estudiantes puedan acceder y visualizarlo.
