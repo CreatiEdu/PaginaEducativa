@@ -34,18 +34,76 @@
       </div>
     </div>
   </nav>
-  
-<!-- Sección Autogestión de Cuotas -->
-<div class="container my-5">
-  <h2 class="text-center mb-4">Autogestión de Cuotas</h2>
-  <p class="text-center">Regístrate o inicia sesión para ver y pagar tus cuotas.</p>
 
-  <div class="row justify-content-center">
-    <div class="col-md-6 text-center">
-      <button class="btn btn-success m-2">Registrarse</button>
-      <a href="login.html" class="btn btn-primary m-2">Iniciar Sesión</a>
-    </div>
-  </div>
+<!-- Sección Cuotas -->
+<div class="container my-5">
+  <h2 class="text-center mb-4">Registro de Cuotas</h2>
+  <table class="table table-bordered table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>ID Cuota</th>
+        <th>ID Usuario</th>
+        <th>Concepto</th>
+        <th>Monto Base</th>
+        <th>Recargo</th>
+        <th>Fecha Vencimiento 1</th>
+        <th>Fecha Vencimiento 2</th>
+        <th>Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>001</td>
+        <td>1001</td>
+        <td>Febrero</td>
+        <td>$54.000</td>
+        <td>$0</td>
+        <td>05/02/2025</td>
+        <td>10/03/2025</td>
+        <td><a href="#" class="btn btn-sm btn-primary">Pagar</a></td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>1001</td>
+        <td>Marzo</td>
+        <td>$54.000</td>
+        <td>$0</td>
+        <td>05/03/2025</td>
+        <td>10/04/2025</td>
+        <td><button class="btn btn-sm btn-secondary" disabled>Pagada</button></td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>1001</td>
+        <td>Abril</td>
+        <td>$54.000</td>
+        <td>$0</td>
+        <td>05/04/2025</td>
+        <td>10/05/2025</td>
+        <td><a href="#" class="btn btn-sm btn-primary">Pagar</a></td>
+      </tr>
+      <tr>
+        <td>004</td>
+        <td>1001</td>
+        <td>Mayo</td>
+        <td>$54.000</td>
+        <td>$0</td>
+        <td>05/05/2025</td>
+        <td>10/06/2025</td>
+        <td><button class="btn btn-sm btn-secondary" disabled>Pagada</button></td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>1001</td>
+        <td>Junio</td>
+        <td>$54.000</td>
+        <td>$0</td>
+        <td>05/06/2025</td>
+        <td>10/07/2025</td>
+        <td><a href="#" class="btn btn-sm btn-primary">Pagar</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
