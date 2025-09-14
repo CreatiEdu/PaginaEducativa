@@ -16,3 +16,6 @@ CREATE TABLE usuarios(
     PRIMARY KEY (id_usuario),
     FOREIGN KEY (rol) REFERENCES roles(id_rol)
 );
+use testback;
+INSERT INTO roles (rol) VALUES ('administrador');
+INSERT INTO roles (rol) VALUES ('Usuario');

@@ -55,7 +55,7 @@ def main():
     usuario_logueado = verificar_credenciales(username_ingresado, password_ingresado)
 
     if usuario_logueado:
-        print(f"\n¡Login exitoso! Bienvenido, {usuario_logueado['username']}.")
+        print(f"\n¡Login exitoso! Bienvenido, {usuario_logueado['usuario']}.")
         # Aquí podrías usar otros datos, por ejemplo: print(f"Tu rol es: {usuario_logueado['rol']}")
     else:
         print("\nNombre de usuario o contraseña incorrectos.")
