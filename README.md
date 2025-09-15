@@ -7,9 +7,10 @@ El presente proyecto consiste en crear una página web para una institución edu
 * Generar un formulario de contacto.
 * Implementar que los padres puedan visualizar las cuotas pagadas y adeudas, contando con la opcion de pago.
 * Se visualizara otros productos que ofrece la institucion (cuaderno de comunicado, uniformes y libros)
+  
+---
 
-
-**Ideas a futuro**
+## Ideas a futuro
     
 * Que los profesores puedan cargar sus programas educativos para que los estudiantes puedan acceder y visualizarlo.
 * Armar una sección donde los estudiantes puedan acceder a los contenidos de cada asignatura como videos, apuntes, graficos,  etc..
