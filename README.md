@@ -1,19 +1,16 @@
 # PaginaEducativa 
 
 Descripcion: 
-El presente proyecto consiste en crear una página web para una institución educativa que cuenta con nivel inicial, primario y secundario (con dos orientaciones: Educación física y multimedia) con la finalidad de mostrar las actividades que desarrolla la misma y a su vez que los ciudadanos puedan acceder a los datos básicos de contacto (Facebook, Instagram, teléfono, mail, domicilio) Funcionalidades Presentación de la institución (historia).
+El presente proyecto consiste en crear una página web para una institución educativa que cuenta con nivel inicial, primario y secundario (con dos orientaciones: Educación física y multimedia) con la plataforma permitirá visibilizar las actividades y proyectos, los niveles educativos disponibles, la visualización de cuotas con opción de pagos, ofrecer sus productos (cuadernos de comunicado, uniformes y libros) y ofrezca un canal de contacto oficial con la comunidad.
 
 * Mostrar a la comunidad las actividades que desarrolla la institución como proyectos, ferias de ciencias, orientaciones que dicta la escuela secundaria,etc.
 * Generar un formulario de contacto.
-* Se va implementar que los podres puedan acceder a las cuotas adeudas a través de la página web y poder descargarla para su futuro pago.
+* Implementar que los padres puedan visualizar las cuotas pagadas y adeudas, contando con la opcion de pago.
+* Se visualizara otros productos que ofrece la institucion (cuaderno de comunicado, uniformes y libros)
+  
+---
 
-**Tecnologias a implementar**
-Dado que se realizara un sitio Web, las tecnologias a utilizar seran las siguientes:
-* html
-* css
-* php
-
-Ideas a futuro
+## Ideas a futuro
     
 * Que los profesores puedan cargar sus programas educativos para que los estudiantes puedan acceder y visualizarlo.
 * Armar una sección donde los estudiantes puedan acceder a los contenidos de cada asignatura como videos, apuntes, graficos,  etc..
@@ -38,29 +35,14 @@ Ideas a futuro
 
 * **Control de versiones**
   - **Git & GitHub**: Administración del repositorio y colaboración en equipo con ramas.
----
-## Tecnologías
 
-* **Frontend**
-  - **HTML5**: Estructura del sitio web.
-  - **CSS3**: Estilos y diseño responsivo.
-  - **JavaScript** 
-
-* **Backend**
-  - **Python**: Lenguaje de programación para la lógica del lado del servidor.
-  
-* **Base de Datos**
-  - **MySQL**: Almacenamiento y gestión de la información de usuarios y contenido.
-
-* **Control de versiones**
-  - **Git & GitHub**: Administración del repositorio y colaboración en equipo con ramas.
 ---
 
 ##  Integrantes del equipo
 
-- **Matías Rodríguez** – Scrum Master / Desarrollador  
+- **Matías Rodríguez** –  Desarrollador  
 - **Eric Matías Astrada** – Desarrollador  
-- **Kevin Astrada** – Desarrollador  
+- **Kevin Astrada** – Scrum Master /Desarrollador  
 - **Dolores Fernández Rubio** – Desarrolladora  
 - **Franco Fernández Rubio** – Desarrollador  
 - **Alejandro Gariglio** – Desarrollador  
