@@ -8,9 +8,9 @@ def crear_conexion():
     Es idéntica a la de app.py, podría moverse a un módulo compartido.
     """
     try:
-        # Reemplaza con tus propios datos de conexión si son diferentes
+        # Datos Basicos para pruebas
         conexion = mysql.connector.connect(
-            host='192.168.100.8',
+            host='localhost',
             user='root',
             password='12345',
             database='testback'
@@ -29,7 +29,6 @@ def agregar_usuario(username, password, rol):
     cursor = None
     try:
         cursor = conexion.cursor()
-        # Asumiendo que la tabla 'usuarios' tiene las columnas: id (autoincrement), usuario, password, rol
         query = "INSERT INTO usuarios (usuario, password, rol) VALUES (%s, %s, %s)"
         cursor.execute(query, (username, password, rol))
         conexion.commit()
@@ -52,7 +51,7 @@ def listar_usuarios():
     cursor = None
     try:
         cursor = conexion.cursor(dictionary=True)
-        query = "SELECT id_usuario, usuario FROM usuarios" # No seleccionamos la contraseña por seguridad
+        query = "SELECT id_usuario, usuario FROM usuarios" 
         cursor.execute(query)
         usuarios = cursor.fetchall()
         
