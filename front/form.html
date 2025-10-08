@@ -40,19 +40,19 @@
         <form>
           <div class="mb-3">
             <label for="nombre" class="form-label">Nombre </label>
-            <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required minlength="3" maxlength="30" pattern="[A-Za-z\s]+" title="Solo se permiten letras." >
           </div>
           <div class="mb-3">
             <label for="nombre" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
+            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required minlength="3" maxlength="30" pattern="[A-Za-z\s]+" title="Solo se permiten letras.">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Correo electrónico</label>
-            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required maxlength="50" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo electrónico válido.">
           </div>
           <div class="mb-3">
             <label for="mensaje" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu consulta..." maxlength="250"></textarea>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu consulta..." maxlength="250" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary w-100">Enviar</button>
         </form>

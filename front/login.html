@@ -42,12 +42,12 @@
     
     <div class="mb-3">
       <label for="usuario" class="form-label">Usuario</label>
-      <input type="text" class="form-control" id="usuario" placeholder="Ingrese su usuario">
+      <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Ingrese su usuario" required minlength="3" maxlength="20"  pattern="[A-Za-z0-9]+" title="El usuario solo puede contener letras y números.">
     </div>
     
     <div class="mb-3">
       <label for="contraseña" class="form-label">Contraseña</label>
-      <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+      <input type="password" name="contraseña" class="form-control" id="contraseña" placeholder="Ingrese su contraseña" required minlength="6" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="La contraseña debe tener al menos una letra mayúscula, una minúscula y un número.">
     </div>
     <a href="registroypago.html" class="btn btn-primary w-100">Continuar</a>
     
