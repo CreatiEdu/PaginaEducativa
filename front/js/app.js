@@ -8,11 +8,6 @@ const usuarios = {
 // Obtener el formulario
 const formLogin = document.getElementById('formLogin');
 
-// Obtener elementos para mostrar/ocultar contraseña
-const togglePassword = document.getElementById('togglePassword');
-const passwordInput = document.getElementById('password');
-const eyeIcon = document.getElementById('eyeIcon');
-
 // Cuando se envía el formulario
 formLogin.addEventListener('submit', function(e) {
   e.preventDefault();
