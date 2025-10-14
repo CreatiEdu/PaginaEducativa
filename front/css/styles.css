@@ -40,3 +40,115 @@ form {
   height: 200px;
   object-fit: cover;
 }
+
+.inicial_info { 
+    background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+.inicial_info ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.inicial_info li {
+    margin-bottom: 10px;
+}
+
+.inicial_actividades { 
+    background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.inicial_inscripciones {
+    background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.primario_info {
+    background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+.primario_info ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+.primario_info li {
+    margin-bottom: 10px;
+}
+
+.primario_actividades {
+     background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.primario_inscripciones {
+     background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.secundario_info {
+     background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.secundario_info ul{
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.secundario_info li{
+    margin-bottom: 10px;
+}
+
+.secundario_actividades{
+    background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.secundario_inscripciones{
+     background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.cta {
+    background-color: #c8b7c9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}

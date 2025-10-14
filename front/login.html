@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio - C.I.E.M.</title>
+  <meta name="description" content="El Centro Integral Educativo M.E.D.E.A. es una institución escolar formadora con valores cristianos que cuentan con 3 niveles educativos.">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -18,10 +24,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="form.html">Contacto</a></li>
            <li class="nav-item"><a class="nav-link" href="productos.html">Nuestros productos</a></li>
-            <li class="nav-item"><a class="nav-link" href="autogestion.html">Autogestion</a></li>
+            <li class="nav-item"><a class="nav-link active" href="autogestion.html">Autogestion</a></li>
              <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Nuestros Servicios
           </a>
@@ -42,12 +48,12 @@
     
     <div class="mb-3">
       <label for="usuario" class="form-label">Usuario</label>
-      <input type="text" class="form-control" id="usuario" placeholder="Ingrese su usuario">
+      <input type="text" name="usuario" class="form-control" id="usuario" placeholder="Ingrese su usuario" required minlength="3" maxlength="20"  pattern="[A-Za-z0-9]+" title="El usuario solo puede contener letras y números.">
     </div>
     
     <div class="mb-3">
       <label for="contraseña" class="form-label">Contraseña</label>
-      <input type="password" class="form-control" id="contraseña" placeholder="Ingrese su contraseña">
+      <input type="password" name="contraseña" class="form-control" id="contraseña" placeholder="Ingrese su contraseña" required minlength="6" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="La contraseña debe tener al menos una letra mayúscula, una minúscula y un número.">
     </div>
     <a href="registroypago.html" class="btn btn-primary w-100">Continuar</a>
     
@@ -69,6 +75,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/proteccion.js"></script>
 </body>
 </html>
 

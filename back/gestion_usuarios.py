@@ -1,24 +1,6 @@
-import mysql.connector
-from mysql.connector import Error
+from db_connection import crear_conexion, cerrar_conexion
 import getpass
 
-def crear_conexion():
-    """
-    Crea una conexión a la base de datos MySQL.
-    Es idéntica a la de app.py, podría moverse a un módulo compartido.
-    """
-    try:
-        # Datos Basicos para pruebas
-        conexion = mysql.connector.connect(
-            host='localhost',
-            user='root',
-            password='12345',
-            database='testback'
-        )
-        return conexion
-    except Error as e:
-        print(f"Error al conectar a MySQL: {e}")
-        return None
 
 def agregar_usuario(username, password, rol):
     """Agrega un nuevo usuario a la base de datos."""
@@ -39,8 +21,7 @@ def agregar_usuario(username, password, rol):
     finally:
         if cursor:
             cursor.close()
-        if conexion.is_connected():
-            conexion.close()
+        cerrar_conexion(conexion)
 
 def listar_usuarios():
     """Lista todos los usuarios de la base de datos."""
@@ -69,8 +50,7 @@ def listar_usuarios():
     finally:
         if cursor:
             cursor.close()
-        if conexion.is_connected():
-            conexion.close()
+        cerrar_conexion(conexion)
 
 def modificar_usuario(user_id, nuevo_username, nuevo_rol):
     """Modifica el nombre de usuario y/o el rol de un usuario existente."""
@@ -94,8 +74,7 @@ def modificar_usuario(user_id, nuevo_username, nuevo_rol):
     finally:
         if cursor:
             cursor.close()
-        if conexion.is_connected():
-            conexion.close()
+        cerrar_conexion(conexion)
 
 def eliminar_usuario(user_id):
     """Elimina un usuario de la base de datos por su ID."""
@@ -119,8 +98,7 @@ def eliminar_usuario(user_id):
     finally:
         if cursor:
             cursor.close()
-        if conexion.is_connected():
-            conexion.close()
+        cerrar_conexion(conexion)
 
 def mostrar_menu():
     """Muestra el menú de opciones al usuario."""
