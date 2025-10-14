@@ -17,5 +17,14 @@ CREATE TABLE usuarios(
     FOREIGN KEY (rol) REFERENCES roles(id_rol)
 );
 use testback;
+
+CREATE TABLE productos (
+    id_producto INT NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(100) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    stock INT NOT NULL,
+    PRIMARY KEY (id_producto)
+);
+
 INSERT INTO roles (rol) VALUES ('administrador');
 INSERT INTO roles (rol) VALUES ('Usuario');
