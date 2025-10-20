@@ -23,7 +23,7 @@ formLogin.addEventListener('submit', function(e) {
       // Login correcto - guardar sesión y redirigir
       sessionStorage.setItem('logueado', 'true');
       alert('Login exitoso! Redirigiendo...');
-      window.location.href = 'index.html';
+      window.location.href = 'registroypago.html';
     } else {
       // Contraseña incorrecta
       alert('Contraseña incorrecta');
