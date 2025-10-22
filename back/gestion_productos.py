@@ -21,9 +21,29 @@ if __name__ == "__main__":
     # Listar productos para ver cambios
     listar_productos()
 
-
-import mysql.connector
-from mysql.connector import Error
+def main():
+    while True:
+        print("\n--- Gestión de Productos ---")
+        print("1. Crear producto")
+        print("2. Listar productos")
+        print("3. Modificar producto")
+        print("4. Eliminar producto")
+        print("5. Salir")
+        opcion = input("Seleccione una opción: ")
+        match opcion:
+            case "1":
+                crear_producto()
+            case "2":
+                listar_productos()
+            case "3":
+                modificar_producto()
+            case "4":
+                eliminar_producto()
+            case "5":
+                print("Gestion de Productos Cerrada.")
+                break
+            case _:
+                print("Error: Opción no válida.")
 
 def crear_conexion():
     """
@@ -40,7 +60,6 @@ def crear_conexion():
     except Error as e:
         print(f"Error al conectar a MySQL: {e}")
         return None
-
 
 def crear_producto(nombre, precio, stock):
     """
@@ -64,8 +83,6 @@ def crear_producto(nombre, precio, stock):
             cursor.close()
         if conexion.is_connected():
             conexion.close()
-
-
 
 def listar_productos():
     """
@@ -93,8 +110,6 @@ def listar_productos():
             cursor.close()
         if conexion.is_connected():
             conexion.close()
-
-
 
 def modificar_producto(id_producto, nuevo_nombre=None, nuevo_precio=None, nuevo_stock=None):
     """
@@ -136,8 +151,6 @@ def modificar_producto(id_producto, nuevo_nombre=None, nuevo_precio=None, nuevo_
             cursor.close()
         if conexion.is_connected():
             conexion.close()
-
-
 
 def eliminar_producto(id_producto):
     """

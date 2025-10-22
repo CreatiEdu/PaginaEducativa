@@ -1,4 +1,5 @@
 
+from back import consulta, gestion_usuarios, gestion_productos
 from db_connection import crear_conexion, cerrar_conexion
 
 
@@ -25,6 +26,28 @@ def verificar_credenciales(username, password):
         cerrar_conexion(conexion)
         print("Conexión a MySQL cerrada.")
 
+def menu(username, password):
+    while True :
+        print("\n--- Menú Principal ---")
+        print("\n1. Consultar Pedidos")
+        print("\n2. Gestion de Usuarios")
+        print("\n3. Gestion de Productos")
+        print("\n4. Salir")
+        opcion = input("Seleccione una opción: ")
+        match opcion:
+            case "1":
+                consulta.main()
+            case "2":
+               consulta.main()
+            case "3":
+                gestion_usuarios.main()
+            case "4":
+                print(f"Sesion Finalizada. Hasta Pronto {username}.")
+                break
+            case _:
+                print("Error: Opción no válida.")
+                
+
 def main():
     """Función principal para ejecutar el login de consola."""
     print("--- Sistema de Login con Base de Datos ---")
@@ -36,8 +59,11 @@ def main():
 
     if usuario_logueado:
         print(f"\n¡Login exitoso! Bienvenido, {usuario_logueado['usuario']}.")
+        menu(username_ingresado, password_ingresado)
     else:
         print("\nNombre de usuario o contraseña incorrectos.")
+        main()
+
 
 
 if __name__ == "__main__":
