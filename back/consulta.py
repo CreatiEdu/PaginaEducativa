@@ -57,7 +57,3 @@ Total: ${p['total']}
 """)
     else:
         print("No se encontraron pedidos o hubo un error en la conexión/consulta.")
-
-
-if __name__ == "__main__":
-    main()

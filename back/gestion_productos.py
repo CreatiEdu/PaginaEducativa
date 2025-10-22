@@ -2,24 +2,23 @@
 import mysql.connector
 from mysql.connector import Error
 
-# ...existing code...
-
-if __name__ == "__main__":
-    print("--- Prueba CRUD de productos ---")
+# Pruebas Originales
+#if __name__ == "__main__":
+    #print("--- Prueba CRUD de productos ---")
     # Crear producto
-    crear_producto("Cuaderno de comunicados", 1500.00, 100)
-    crear_producto("Uniforme escolar", 5000.00, 50)
-    crear_producto("Libro escolar", 2500.00, 30)
+    #crear_producto("Cuaderno de comunicados", 1500.00, 100)
+    #crear_producto("Uniforme escolar", 5000.00, 50)
+    #crear_producto("Libro escolar", 2500.00, 30)
     # Listar productos
-    listar_productos()
+    #listar_productos()
     # Modificar producto (ejemplo: cambiar precio y stock del producto 1)
-    modificar_producto(1, nuevo_precio=1600.00, nuevo_stock=90)
+    #modificar_producto(1, nuevo_precio=1600.00, nuevo_stock=90)
     # Listar productos para ver cambios
-    listar_productos()
+    #listar_productos()
     # Eliminar producto (ejemplo: eliminar producto 2)
-    eliminar_producto(2)
+    #eliminar_producto(2)
     # Listar productos para ver cambios
-    listar_productos()
+    #listar_productos()
 
 def main():
     while True:
