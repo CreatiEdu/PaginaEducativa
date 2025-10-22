@@ -1,5 +1,5 @@
 
-from back import consulta, gestion_usuarios, gestion_productos
+import consulta, gestion_usuarios, gestion_productos
 from db_connection import crear_conexion, cerrar_conexion
 
 
@@ -38,9 +38,9 @@ def menu(username, password):
             case "1":
                 consulta.main()
             case "2":
-               consulta.main()
-            case "3":
                 gestion_usuarios.main()
+            case "3":
+                gestion_productos.main()
             case "4":
                 print(f"Sesion Finalizada. Hasta Pronto {username}.")
                 break

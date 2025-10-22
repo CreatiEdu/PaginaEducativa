@@ -13,7 +13,7 @@ def crear_conexion():
             database="testback"
         )
         if conexion.is_connected():
-            print("✅ Conexión establecida con la base de datos")
+            #print("✅ Conexión establecida con la base de datos")
             return conexion
     except Error as e:
         print(f"❌ Error al conectar a MySQL: {e}")

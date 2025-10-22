@@ -119,7 +119,7 @@ def main():
         elif opcion == '2':
             username = input("Ingrese el nombre de usuario: ")
             password = getpass.getpass("Ingrese la contraseña: ")
-            rol = input("Ingrese el rol (e.g., admin, profesor, estudiante): ")
+            rol = input("Ingrese el rol :\n1- admin.\n2- estudiante.\n Rol: ")
             agregar_usuario(username, password, rol)
         elif opcion == '3':
             listar_usuarios()

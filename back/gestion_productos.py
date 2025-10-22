@@ -31,13 +31,33 @@ def main():
         opcion = input("Seleccione una opción: ")
         match opcion:
             case "1":
-                crear_producto()
+                nombre = input("Ingrese el nombre del producto: ")
+                precio = float(input("Ingrese el precio del producto: "))
+                stock = int(input("Ingrese el stock del producto: "))
+                try:
+                    crear_producto(nombre, precio, stock)
+                except Error as e:
+                    print(f"❌ Error: {e}")
             case "2":
-                listar_productos()
+                try:
+                    listar_productos()
+                except Error as e:
+                    print(f"❌ Error: {e}")
             case "3":
-                modificar_producto()
+                id_producto = int(input("Ingrese el ID del producto a modificar: "))
+                nombre =input("Ingrese el nuevo nombre del producto: ")
+                precio = float(input("Ingrese el nuevo precio del producto: "))
+                stock = int(input("Ingrese el nuevo stock del producto: "))
+                try:
+                    modificar_producto(id_producto, nombre, precio, stock)
+                except Error as e:
+                    print(f"❌ Error: {e}")
             case "4":
-                eliminar_producto()
+                id_producto = int(input("Ingrese el ID del producto a eliminar: "))
+                try:
+                    eliminar_producto(id_producto)
+                except Error as e:
+                    print(f"❌ Error: {e}")
             case "5":
                 print("Gestion de Productos Cerrada.")
                 break
